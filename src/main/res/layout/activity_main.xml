@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#95A69C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#CD1515"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Lütfen Giriş Yapınız"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp"
+        android:layout_weight="0" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#009688"
+        android:orientation="horizontal"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ŞEHİR : "
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="41dp"
+            android:layout_weight="0" />
+
+        <EditText
+            android:id="@+id/txtInputAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="şehir adını giriniz"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <LinearLayout
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#009688"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+
+        <Button
+            android:id="@+id/btnGiris"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:onClick="btnGiris"
+            android:text="@string/btnGiris"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
